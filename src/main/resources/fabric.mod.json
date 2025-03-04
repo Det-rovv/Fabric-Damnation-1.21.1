@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "damnation",
+	"version": "${version}",
+	"name": "Damnation",
+	"description": "Curse mechanic expansion",
+	"authors": [
+		"Detrovv"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/damnation/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.detrovv.damnation.Damnation"
+		],
+		"client": [
+			"net.detrovv.damnation.DamnationClient"
+		],
+		"fabric-datagen": [
+			"net.detrovv.damnation.DamnationDataGenerator"
+		]
+	},
+	"mixins": [
+		"damnation.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
